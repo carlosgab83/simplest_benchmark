@@ -25,9 +25,3 @@ module SimplestBenchmark
     @miliseconds ||= []
   end
 end
-
-include SimplestBenchmark
-
-sb_begin "1"
-1000000.times{|i| i*100}
-sb_end "1"
