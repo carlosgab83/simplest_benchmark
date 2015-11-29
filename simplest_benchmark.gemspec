@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'simplest_benchmark'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2015-11-28'
   s.summary     = "Benchmark your code fastest, simplest and get pragmatic results."
   s.description = "Counts miliseconds transcurred between bs_begin and bs_end ruby calls. It can be nested for benchmark each part of the code you want. Documentation and code in https://github.com/carlosgab83/simplest_benchmark/"
