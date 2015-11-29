@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version     = '0.0.1'
   s.date        = '2015-11-28'
   s.summary     = "Benchmark your code fastest, simplest and get pragmatic results."
-  s.description = "Counts miliseconds transcurred between bs_begin and bs_end calls. It can be nested for benchmark each part of the code you want."
+  s.description = "Counts miliseconds transcurred between bs_begin and bs_end ruby calls. It can be nested for benchmark each part of the code you want. Documentation and code in https://github.com/carlosgab83/simplest_benchmark/"
   s.authors     = ["Carlos Ochoa"]
   s.email       = 'carlosgab83@gmail.com'
   s.files       = `git ls-files -z`.split("\x0")
