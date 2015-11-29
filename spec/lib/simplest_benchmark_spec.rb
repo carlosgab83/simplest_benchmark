@@ -2,6 +2,8 @@
 
 require 'simplest_benchmark'
 
+include SimplestBenchmark
+
 RSpec.describe SimplestBenchmark do
 
 		context "with simple calls" do

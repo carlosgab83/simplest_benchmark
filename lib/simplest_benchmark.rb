@@ -5,7 +5,7 @@ require_relative 'simplest_benchmark_logger.rb'
 module SimplestBenchmark
   include SimplestBenchmarkLogger
 
-  attr_accessor :miliseconds, :logger, :rails_app
+  attr_reader :miliseconds
 
 	def sb_begin(msg = "", other_info = "")
     time        = Time.now
