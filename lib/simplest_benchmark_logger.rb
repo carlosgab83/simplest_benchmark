@@ -10,7 +10,7 @@ module SimplestBenchmarkLogger
   end
 
   def custom_logger
-    File.open("simplest_benchmark.log", "a")
+    @custom_logger ||= File.open("simplest_benchmark.log", "a")
   end
 
   def rails_app
