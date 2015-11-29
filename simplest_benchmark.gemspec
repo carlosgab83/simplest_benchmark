@@ -6,10 +6,14 @@ Gem::Specification.new do |s|
   s.description = "Counts miliseconds transcurred between bs_begin and bs_end calls. It can be nested for benchmark each part of the code you want."
   s.authors     = ["Carlos Ochoa"]
   s.email       = 'carlosgab83@gmail.com'
-  s.files       = ["lib/simplest_benchmark.rb", "lib/simplest_benchmark_logger.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/simplest_benchmark'
+  s.files       = `git ls-files -z`.split("\x0")
+  s.homepage    = 'http://rubygems.org/gems/simplest_benchmark'
   s.license       = 'MIT'
+
+  s.files         = `git ls-files -z`.split("\x0")
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
+  s.require_paths = ["lib"]
+
 
   s.add_development_dependency "bundler", "~> 1.6"
   s.add_development_dependency "rake", "~> 10.0"
